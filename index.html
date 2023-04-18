@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bill-spill</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   <div class="frame">
+    <h2 id="heading">BILL<br>SPILL</h2>
+    <div id="rectangle-1">
+        <h5 id="bill-heading">Bill</h5>
+        <input type="number" id="enter_amount" oninput="calculateBill()" placeholder="₹                                                                                 0">
+    </div>
+    <h5 id="tip-heading">Select Tip %</h5>
+    <button  class="button-style" onclick="calculateBill(5)"> 5% </button>
+    <button  class="button-style" onclick="calculateBill(10)"> 10% </button>
+    <button  class="button-style" onclick="calculateBill(15)"> 15% </button><br><br>
+    <button  class="button-style" onclick="calculateBill(25)"> 25% </button>
+    <button  class="button-style" onclick="calculateBill(50)"> 50% </button>
+    <button  class="button-style" onclick="calculateBill(75)"> 75% </button>
+    
+    <h5 id="no_ppl">Number of People</h5>
+    <button id="enter_people"><img src="assets/Vector.png" id="vector_img"></button>
+        <div id="btns"><!--erase-->
+            
+                    <button onclick="increment_1()" id="increment_btn"> + </button></td>
+                    <button oninput="calculateBill()" id="initial_num" > 0 </button>
+                    <button onclick="decrement_1()" id="decrement_btn"> - </button>
+
+        </div>
+    <div id="rectangle-2">
+    </div>
+    <h5 id="tip_heading">Tip Amount</h5>
+    <h6 id="per_person">/ person</h6>
+    <h5 id="tip_rupee"> ₹0.00 </h5>
+    <h5 id="total">Total</h5>
+    <h6 id="person_total">/ person</h6>
+    <h5 id="total_rupee"> ₹0.00 </h5>
+    <button onclick="reset()" id="reset_btn">Reset</button>
+   </div> 
+
+<script src="index.js"></script>
+</body>
+</html>
